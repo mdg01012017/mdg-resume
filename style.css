@@ -1,0 +1,31 @@
+
+body {
+  background-color: #121212;
+  color: #ffffff;
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+}
+.hero {
+  padding: 2rem;
+  text-align: center;
+  background: #1f1f1f;
+}
+.button {
+  display: inline-block;
+  background: #007bff;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+  margin-top: 1rem;
+}
+.timeline {
+  padding: 2rem;
+}
+.timeline-entry {
+  margin-bottom: 2rem;
+}
+.filters button {
+  margin: 0.5rem;
+  padding: 0.5rem;
+}
