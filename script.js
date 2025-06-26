@@ -4,7 +4,13 @@ document.querySelectorAll('[data-filter]').forEach(button => {
     const filter = button.getAttribute('data-filter');
     document.querySelectorAll('.timeline-entry').forEach(entry => {
       const category = entry.getAttribute('data-category');
-      entry.style.display = (filter === 'all' || category === filter) ? 'block' : 'none';
+      if (filter === 'all' || category === filter) {
+        entry.style.display = 'block';
+        entry.style.opacity = '1';
+      } else {
+        entry.style.opacity = '0';
+        setTimeout(() => { entry.style.display = 'none'; }, 400);
+      }
     });
   });
 });
